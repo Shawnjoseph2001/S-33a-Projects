@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+        <style>
+            /* Add some styling for the form and input fields */
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            input[type="text"] {
+                width: 60%;
+                height: 30px;
+                font-size: 18px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 0 12px;
+            }
+            input[type="submit"] {
+                width: 20%;
+                height: 36px;
+                font-size: 18px;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Create a form with an action attribute set to "https://www.google.com/search" and an input field with a name attribute set to "q" -->
+        <form action="https://www.google.com/search"  style="margin-top: 30px;">
+            <!-- Add a hidden input field with a name attribute set to "tbm" and a value attribute set to "isch" to specify that this is a Google Image Search -->
+            <input type="hidden" name="tbm" value="isch">
+            <input type="text" name="q" placeholder="Search Google Images">
+            <input type="submit" value="Search">
+        </form>
+        <!-- Add a link in the upper-right to go back to Google Search -->
+        <a href="google-search.html" style="position: absolute; top: 10px; right: 10px; font-size: 18px;">Google Search</a>
+    </body>
+</html>
